@@ -1,58 +1,126 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #ffffff;
 }
 
-.login-page {
-    background-color: #f0f2f5;
+/* WRAPPER */
+.login-wrapper {
+    background-color: #ffffff;
 }
 
-/* Facebook Logo */
-.fb-logo {
-    font-size: 64px;
+/* LEFT VISUAL */
+.left-visual {
+    position: relative;
+    padding: 60px;
+}
+
+.visual-stack {
+    position: relative;
+    width: 320px;
+    height: 380px;
+}
+
+.visual-card {
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-main {
+    left: 50px;
+    top: 30px;
+    z-index: 3;
+}
+
+.card-top {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform: rotate(-6deg);
+}
+
+.card-bottom {
+    left: 100px;
+    top: 70px;
+    z-index: 1;
+    transform: rotate(6deg);
+}
+
+.left-text {
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+}
+
+.fb-logo-large {
+    width: 60px;
+}
+
+.left-text h1 {
+    font-size: 46px;
     font-weight: 700;
-    color: #1877f2;
-    letter-spacing: -1px;
-}
-
-/* Tagline */
-.fb-tagline {
-    font-size: 24px;
+    line-height: 1.1;
     color: #1c1e21;
-    line-height: 1.3;
 }
 
-/* Login Card */
+.left-text h1 span {
+    color: #1877f2;
+}
+
+/* LOGIN CARD */
 .login-card {
-    background: #ffffff;
-    padding: 20px;
     width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    max-width: 420px;
+    padding: 32px;
+    border-radius: 14px;
+    border: 1px solid #e4e6eb;
+    background-color: #ffffff;
 }
 
-/* Inputs */
+/* INPUTS */
 .form-control {
-    font-size: 17px;
-    padding: 12px;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 10px;
 }
 
-/* Login Button */
+.form-control:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24,119,242,0.15);
+}
+
+/* BUTTONS */
 .login-btn {
     background-color: #1877f2;
-    border: none;
+    border-radius: 10px;
     font-weight: 500;
+    padding: 12px;
 }
 
 .login-btn:hover {
     background-color: #166fe5;
 }
 
-/* Forgot Password */
-.forgot-link {
+.create-btn {
+    background-color: #ffffff;
+    border: 1px solid #1877f2;
     color: #1877f2;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.create-btn:hover {
+    background-color: #f0f6ff;
+}
+
+/* LINKS */
+.forgot-link {
     font-size: 14px;
+    color: #1877f2;
     text-decoration: none;
 }
 
@@ -60,49 +128,22 @@ body {
     text-decoration: underline;
 }
 
-/* Create Account Button */
-.create-btn {
-    background-color: #42b72a;
-    border: none;
-    font-weight: 500;
-    padding: 10px 20px;
+/* DIVIDER */
+.divider {
+    height: 1px;
+    background-color: #e4e6eb;
+    margin: 24px 0;
 }
 
-.create-btn:hover {
-    background-color: #36a420;
-}
-
-/* Button click effect */
-.login-btn:active,
-.create-btn:active {
-    transform: scale(0.98);
-}
-
-/* Create Page Text */
-.create-page-text {
+/* META */
+.meta {
     font-size: 14px;
-    color: #1c1e21;
+    color: #65676b;
 }
 
-.create-page-text a {
-    color: #1877f2;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.create-page-text a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Adjustments */
+/* MOBILE SAFETY */
 @media (max-width: 768px) {
-    .fb-logo {
-        font-size: 48px;
-        text-align: center;
-    }
-
-    .fb-tagline {
-        font-size: 20px;
-        text-align: center;
+    .left-visual {
+        display: none;
     }
 }

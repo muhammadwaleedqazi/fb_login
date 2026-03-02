@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.login-page {
+    background-color: #f0f2f5;
+}
+
+/* Facebook Logo */
+.fb-logo {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1877f2;
+    letter-spacing: -1px;
+}
+
+/* Tagline */
+.fb-tagline {
+    font-size: 24px;
+    color: #1c1e21;
+    line-height: 1.3;
+}
+
+/* Login Card */
+.login-card {
+    background: #ffffff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Inputs */
+.form-control {
+    font-size: 17px;
+    padding: 12px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #1877f2;
+    border: none;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+/* Forgot Password */
+.forgot-link {
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Create Account Button */
+.create-btn {
+    background-color: #42b72a;
+    border: none;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.create-btn:hover {
+    background-color: #36a420;
+}
+
+/* Button click effect */
+.login-btn:active,
+.create-btn:active {
+    transform: scale(0.98);
+}
+
+/* Create Page Text */
+.create-page-text {
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.create-page-text a {
+    color: #1877f2;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.create-page-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .fb-logo {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .fb-tagline {
+        font-size: 20px;
+        text-align: center;
+    }
+}
